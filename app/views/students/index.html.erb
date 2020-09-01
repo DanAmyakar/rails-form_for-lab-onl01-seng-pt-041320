@@ -1,0 +1,10 @@
+<h1>Flatiron School</h1>
+<br />
+<h2>Student Index<h2>
+<br />
+<ul>
+<% @students.each do |student| %>
+        <%= link_to student.to_s, student_path(student) %>
+        <br />
+<% end %>    
+</ul>
